@@ -293,3 +293,11 @@ npm init
 var request = require('request');
 var gulp = require('gulp');
 ```
+
+# 状态码
+
+- 1xx 准备，发送
+- 2xx 成功
+- 3xx 重定向(读缓存)
+- 4xx 客户端(浏览器这边)错误
+- 5xx 服务端(服务器那边)错误
