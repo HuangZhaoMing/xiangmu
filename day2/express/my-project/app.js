@@ -6,8 +6,10 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-// 注册路由
+// 注册sign路由
 var signRouter = require('./routes/sign');
+// 注册dashboard路由
+var dashboardRouter = require('./routes/dashboard');
 
 var app = express();
 
@@ -27,6 +29,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 // 定义路由的进入路径
 app.use('/sign', signRouter);
+app.use('/dashboard', dashboardRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
