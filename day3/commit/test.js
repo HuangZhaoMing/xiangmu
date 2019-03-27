@@ -23,6 +23,7 @@ request.post({
     },
     headers: {
         // 登录信息
+        // 伪造cookie帮助突破密码和账号登录
         'Cookie': `PHPSESSID=6cbnp69r4ij8rgpi81ri1j7250;StuInfo=think%3A%7B%22StuId%22%3A%22127466%22%2C%22StuNumber%22%3A%22GZ181213024%22%2C%22IDcard%22%3A%22ZmRmm5OXYmRmZWmSaG6YmJpm%22%2C%22StuName%22%3A%22%25E6%25A2%2581%25E6%25B5%25B7%25E6%25B1%259F%22%2C%22Cid%22%3A%222283%22%7D;SERVERID=7f2506d563fc3b1a58ea5e805a0066cd|1553673211|1553673211;`
     }
 }, function optionalCallback(err, httpResponse, body) {
