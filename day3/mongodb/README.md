@@ -39,14 +39,25 @@ sudo mongod
 
 由于我是安装在D盘的环境下
 ```bash
-D:\Program Files (x86)\MongoDB\Server\3.2\bin
+D:\Program Files (x86)\MongoDB\Server\4.0\bin
 ```
-所以在bin文件夹下找到mongod.exe命令，然后通过管理员执行`mongod --dbpath x路径x`，路径可以是任何地方，我这里选择在D盘的MongoDB目录下，当然路径不要包含特殊的字符串，比如`Program Files (x86)`也不行
+所以在bin文件夹下找到mongod.exe命令，然后通过命令行管理员执行`mongod --dbpath x路径x`，路径可以是任何地方，我这里选择在D盘的MongoDB目录下，当然路径不要包含特殊的字符串，比如`Program Files (x86)`也不行
 ```bash
-mongod --dbpath D:\mongodb\data\db
+mongod --dbpath D:\mongodb\data\db  # 3.2的启动
+
+window服务里面 # 4.0的启动
 ```
 
 ![image](https://user-images.githubusercontent.com/17243165/31977540-fc0a5a6e-b96f-11e7-9a2b-34d66d7241c4.png)
+
+# nosql
+
+它与mysql最大的区别是，mysql做数据库sql(select,update,insert)
+
+mysql是要先设置表结构，比如name是text/varchar类型，age是int类型
+
+而mongodb是可以弱类型，并且表结构是可以无规则的
+
 
 
 # 命令行
